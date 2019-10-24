@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="assets/cs/main.css"/>
+    <script defer src="assets/js/main.js"></script>
     <title>Premier League Trivia Quiz</title>
 </head>
 <body>
     <header class="container-fluid">
         <!-------------------------------------------Header-->
         <div class="row">
-            <div class="col">
-                <h1 class="text-center pt-3 pb-3">
-                    Premier League Trivia Quiz
-                    <img src="../assets/images/PL-Badge.png" alt="Premier League" width="80" height="80">
-                </h1>
-
+            <div class="col" style="padding: 0">
+                <nav class="navbar navbar-light bg-dark">
+                    <h1 class="text-center pt-3 pb-3">
+                        Premier League Trivia Quiz
+                        <img src="../assets/images/PL-Badge.png" alt="Premier League" width="80" height="80">
+                    </h1>
+                </nav>
             </div>
         </div>
     </header>
@@ -31,7 +33,7 @@
             <div class="col-sm-12 col-md-4">
                 <div class="row">
                     <div class="col text-center">
-                        <div class="jumbotron jumbotron-fluid" style="background-color: #DAA520">
+                        <div class="jumbotron jumbotron-fluid mt-4" style="background-color: #DAA520">
                             <h3 class="pb-2 pt-3"> Rules before you start: </h3>
                             <p> This is a multiple choice quiz. </p>
                             <p> Please select only one answer. </p>
@@ -51,7 +53,24 @@
                 </div>
                 <div class="row">
                     <div class="col text-center">
+                        <!--Question Container-->
+                        <div id="question-container" class="hide">
+                            <div id="question" class="mb-4">
+                                <h4>Question:</h4>
+                            </div>
+                            <div id="answer-buttons" class="mt-3 mb-2 btn-grid-form">
+                                <button type="button" class="btn btn-primary">Answer 1</button>
+                                <button type="button" class="btn btn-primary">Answer 2</button>
+                                <button type="button" class="btn btn-primary">Answer 3</button>
+                                <button type="button" class="btn btn-primary">Answer 4</button>
+                            </div>
 
+                            <!--Controls-->
+                            <div class="controls mt-4">
+                                <button type="button" id="start-btn" class="btn start-btn btn-primary">Start</button>
+                                <button type="button" id="next-btn" class="btn next-btn btn-primary">Next</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
