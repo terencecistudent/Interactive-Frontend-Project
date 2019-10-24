@@ -1,0 +1,9 @@
+body {
+    background-color: #DCDCDC;
+}
+
+.jumbotron-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 5%;
+}
